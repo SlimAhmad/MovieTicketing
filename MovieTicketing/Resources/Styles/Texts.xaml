@@ -1,0 +1,77 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<ResourceDictionary xmlns="http://schemas.microsoft.com/dotnet/2021/maui" 
+                    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml">
+           
+             >
+
+    <!--Font family-->
+    <x:String x:Key="NunitoLight">Light</x:String>
+    <x:String x:Key="NunitoRegular">Regular</x:String>
+    <x:String x:Key="NunitoBold">Bold</x:String>
+    <x:String x:Key="NunitoSemiBold">SemiBold</x:String>
+    <x:String x:Key="NunitoBlack">Black</x:String>
+    <x:String x:Key="NunitoBlackItalic">BlackItalic</x:String>
+
+
+    <!--Styles-->
+    <Style TargetType="Label" x:Key="BaseLabelStyle">
+        <Setter Property="FontFamily" Value="{StaticResource NunitoLight}" />
+        <Setter Property="FontSize" Value="{StaticResource MidMediumSize}" />
+
+    </Style>
+
+
+    <Style TargetType="Button" x:Key="BaseButttonStyle">
+        <Setter Property="FontFamily" Value="{StaticResource NunitoSemiBold}" />
+        <Setter Property="FontSize" Value="{StaticResource MidMediumSize}" />
+    </Style>
+
+
+    <Style TargetType="Entry" x:Key="BaseEntryStyle">
+        <Setter Property="FontFamily" Value="{StaticResource NunitoLight}" />
+        <Setter Property="FontSize" Value="{StaticResource MidMediumSize}" />
+    </Style>
+
+
+
+    <Style TargetType="Button" BasedOn="{StaticResource BaseButttonStyle}" />
+    <Style TargetType="Label" BasedOn="{StaticResource BaseLabelStyle}" />
+    <Style TargetType="Entry" BasedOn="{StaticResource BaseEntryStyle}" />
+
+
+    <!--Button styles-->
+    <Style TargetType="Button" BasedOn="{StaticResource BaseButttonStyle}" x:Key="BorderedButton">
+        <Setter Property="BorderColor" Value="{StaticResource GreenColor}"/>
+        <Setter Property="TextColor" Value="{StaticResource GreenColor}"/>
+        <Setter Property="CornerRadius" Value="60"/>
+        <Setter Property="BackgroundColor" Value="Transparent"/>
+        <Setter Property="BorderWidth" Value="3"/>
+        <Setter Property="WidthRequest" Value="115"/>
+        <Setter Property="FontSize" Value="{StaticResource LittleSize}"/>
+
+
+    </Style>
+
+    <Style TargetType="Button" BasedOn="{StaticResource BaseButttonStyle}" x:Key="NormalButton">
+        <Setter Property="BackgroundColor" Value="{StaticResource BlueColor}"/>
+        <Setter Property="TextColor" Value="{StaticResource WhiteTextColor}"/>
+        <Setter Property="CornerRadius" Value="60"/>
+        <Setter Property="WidthRequest" Value="115"/>
+        <Setter Property="Padding" Value="0"/>
+        <Setter Property="FontSize" Value="{StaticResource LittleSize}"/>
+
+
+    </Style>
+
+    <Style TargetType="Button" BasedOn="{StaticResource BaseButttonStyle}" x:Key="ButtonTextStyle">
+        <Setter Property="BackgroundColor" Value="Transparent"/>
+        <Setter Property="TextColor" Value="{StaticResource GreenColor}"/>
+        <Setter Property="WidthRequest" Value="60"/>
+        <Setter Property="Padding" Value="0"/>
+
+        <Setter Property="FontSize" Value="{StaticResource LittleSize}"/>
+
+
+    </Style>
+
+</ResourceDictionary>
